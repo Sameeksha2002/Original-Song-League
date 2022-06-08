@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Original Song League(OSL)</title>
+    <style>
+        /* --------------body----------- */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-color: #1b2c34; */
+            background-image: url(bg1.1.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* height: 100%; */
+            /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* --------------home-------------- */
+        
+        .home {
+            width: 100%;
+            height: 36rem;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            /* background-color: #202F6C; */
+            background-image: url(image3.4.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: cover;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        
+        nav {
+            margin: 1rem 0;
+            margin-bottom: 0;
+            height: 8rem;
+            width: 100%;
+            /* background-color: aliceblue; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #logo2 {
+            margin: 0rem 14rem;
+        }
+        
+        .logo {
+            width: 9rem;
+            margin: 0rem;
+            /* height: 3rem; */
+        }
+        
+        #title {
+            height: 20rem;
+            width: 100%;
+            margin-top: 3rem;
+        }
+        /* ----------process--------------- */
+        
+        .process {
+            width: 75%;
+            color: aliceblue;
+            margin: auto;
+            margin-top: 5rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            /* font-family: "Quicksand", sans-serif; */
+            /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  */
+        }
+        
+        .process>h3 {
+            letter-spacing: 0.2rem;
+            font-size: 2rem;
+            color: #ffdf2b;
+            text-align: center;
+        }
+        
+        .process p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        .process h4 {
+            /* color:#f37493; */
+            font-weight: bold;
+            text-decoration: underline;
+            letter-spacing: 0.15rem;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 0.4rem;
+        }
+        
+        .process ol li {
+            margin-bottom: 0.35rem;
+        }
+        
+        .instructions {
+            margin-left: 1.2rem;
+        }
+        
+        #rules {
+            margin-bottom: 1rem;
+        }
+        
+        li a {
+            color: #ffdf2b;
+            font-weight: bold;
+        }
+        
+        .yellowtext {
+            font-weight: bold;
+            color: #ffdf2b;
+        }
+        /* ------------steps----------------- */
+        
+        .steps {
+            margin: 3.5rem 0;
+            height: 28rem;
+            /* background-color: rgb(150, 221, 44); */
+            /* background-color: white; */
+            background-image: url(image3.2.jpg);
+            background-position: bottom center;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            /* box-shadow: ; */
+        }
+        
+        .steps h2 {
+            /* color: greenyellow; */
+            /* color: #f37196; */
+            color: white;
+            margin: 2rem 0;
+            font-size: 2.5rem;
+            font-family: 'Poppins', sans-serif;
+            /* font-family: "Quicksand", sans-serif; */
+        }
+        
+        .stepscontainer {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .stepscontainer img {
+            height: 17rem;
+            margin: 0 2rem;
+            background-color: white;
+            padding: 0.8rem;
+            border: 2px solid #f37196;
+            border-radius: 13px;
+        }
+        
+        .registration {
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* -------button-------- */
+        
+        .regbutton {
+            text-decoration: none;
+        }
+        
+        .btn {
+            padding: 1.3rem 5rem;
+            background: rgb(255, 223, 43);
+            background: linear-gradient(90deg, rgba(255, 223, 43, 1) 0%, rgba(250, 175, 89, 1) 35%, rgba(239, 77, 185, 1) 100%);
+            border: 0;
+            border-radius: 20px;
+            border: 2px solid #1b2c34;
+            font-size: 1.7rem;
+            color: #1b2c34;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            transition: color 2s, background 2s, border 2s;
+        }
+        
+        .btn:hover {
+            color: #ffdf2b;
+            ;
+            background: #ffdf2b00;
+            border: 2px solid #ffdf2b;
+        }
+        /* ------------------responsive--------------- */
+        
+        @media screen and (max-width: 1100px) {
+            #logo2 {
+                margin: 0rem 8rem;
+            }
+            .logo {
+                width: 7rem;
+                margin: 0rem;
+            }
+            .steps h2 {
+                font-size: 1.5rem;
+            }
+            .stepscontainer img {
+                height: 10rem;
+                margin: 0 1rem;
+            }
+            .steps {
+                height: 20rem;
+            }
+        }
+        /* -----tab---- */
+        
+        @media screen and (max-width: 800px) {
+            .home {
+                width: 100%;
+                height: 30rem;
+            }
+            #logo2 {
+                margin: 0rem 7rem;
+            }
+            .logo {
+                width: 5rem;
+                margin: 0rem;
+            }
+            #title {
+                height: 15rem;
+                width: 100%;
+                margin-top: 2rem;
+            }
+            .stepscontainer img {
+                height: 8rem;
+                margin: 0 1rem;
+            }
+            .registernow {
+                padding: 1rem 1.5rem;
+            }
+            .btn {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media screen and (max-width: 568px) {
+            .home {
+                width: 100%;
+                height: 25rem;
+            }
+            #title {
+                height: 12rem;
+            }
+            #logo2 {
+                margin: 0rem 7rem;
+            }
+            .logo {
+                width: 4rem;
+                margin: 0rem;
+            }
+            .steps h2 {
+                font-size: 1.5rem;
+            }
+            .stepscontainer img {
+                height: 13rem;
+                margin: 1rem 0;
+            }
+            .steps {
+                height: 60rem;
+            }
+            .stepscontainer {
+                flex-direction: column;
+            }
+            .registernow {
+                padding: 0.4rem 0.6rem;
+            }
+            .btn {
+                font-size: 1.2rem;
+            }
+        }
+        /* ----phone----- */
+        
+        @media screen and (max-width: 482px) {
+            .home {
+                width: 100%;
+                height: 20rem;
+            }
+            nav {
+                height: 5rem;
+            }
+            #logo2 {
+                margin: 0rem 4rem;
+            }
+            .logo {
+                width: 3rem;
+                margin: 0rem;
+            }
+            #title {
+                height: 8rem;
+                margin-top: 3rem;
+            }
+            .process p {
+                font-size: 1rem;
+            }
+            .process h3 {
+                font-size: 1.5rem;
+            }
+            .registernow {
+                padding: 0.4rem 0.6rem;
+            }
+            .btn {
+                font-size: 1.2rem;
+            }
+        }
+        /* ---small phone-- */
+        
+        @media screen and (max-width: 296px) {
+            .home {
+                width: 100%;
+                height: 18rem;
+            }
+            #logo2 {
+                margin: 0rem 2rem;
+            }
+            .logo {
+                width: 3rem;
+                margin: 0rem;
+            }
+            #title {
+                height: 6rem;
+                width: 100%;
+            }
+            .process p {
+                font-size: 0.8rem;
+            }
+            .process h3 {
+                font-size: 1rem;
+            }
+            .process h4 {
+                font-size: 1rem;
+            }
+            .registernow {
+                padding: 0.4rem 0.6rem;
+            }
+            .btn {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ------------home--------->
+    <section class="home">
+        <nav>
+            <img class="logo" id="logo1" src="clixzyou_white.png" alt="" />
+            <img class="logo" id="logo2" src="osl_white2.png" alt="" class="logo" />
+            <img class="logo" id="logo3" src="genrock_white2.png" alt="" />
+        </nav>
+        <div class="text">
+            <img id="title" src="1.png" alt="" />
+        </div>
+    </section>
+    <!-- ---------------process------------------ -->
+    <section class="process">
+        <h3>CONTEST PROCESS & INSTRUCTIONS</h3>
+        <br />
+        <p>
+            The date of the contest is extended till <b>31st March,2022</b> .
+            <br />
+            <br /> The competition is divided into two rounds: Audition Round & Final Round.
+        </p>
+        <br />
+
+        <h4>Audition Round</h4>
+        <ol class="instructions">
+            <li>
+                Participants must submit a video of them singing. It must not be edited in any way, nor should any effect be added. Audio recordings will not be accepted.
+            </li>
+            <li>
+                Participants are requested to ensure that the video is of good quality. Poor quality may interfere with Jury's ability to review it.
+            </li>
+            <li>
+                The duration of the video should not exceed 60 seconds, it can lead to disqualification.
+            </li>
+            <li>
+                The participants will be judged for their vocals, stage presence, and selection of song.
+            </li>
+            <li>
+                Registration will be done through Google form. The audition video has to be uploaded on the participant's open Instagram account with accounts tagged <a href="https://www.instagram.com/clixzyou/">@clixzyou</a> and <a href="https://www.instagram.com/genrockind/">@genrockind</a>.
+            </li>
+            <li>
+                Top 50 contestants will be shortlisted and their names will be declared on <a href="https://www.instagram.com/clixzyou/">@clixzyou</a> and
+                <a href="https://www.instagram.com/genrockind/">@genrockind</a>.
+            </li>
+        </ol>
+        <br />
+        <br />
+        <h4>Final Round</h4>
+        <ol class="instructions">
+            <li>All the selected participants will get a confirmation mail.</li>
+            <li>
+                Selected participants must mail their original soundtrack on ClixzYou.
+            </li>
+            <li>
+                The soundtrack participants submit must be written and sung by them only.
+            </li>
+            <li>
+                The participants will be judged based on their original soundtrack (composition, lyrics, vocals, and performing skills).
+            </li>
+            <li>
+                The top 5 contestants selected from the final round will get congratulatory mail.
+            </li>
+            <li>The dates for the final round will be provided soon.</li>
+        </ol>
+        <br />
+        <p class="yellowtext">
+            Certificates will be given to all the contestants who clear the audition round after the contest ends.
+        </p>
+    </section>
+    <!-- --------------------steps------------------------ -->
+    <section class="steps">
+        <h2 class="participate">3 Easy Steps To Participate</h2>
+        <div class="stepscontainer">
+            <img src="step1.1.png" alt="" />
+            <img src="step2.1.png" alt="" />
+            <img src="step3.1.png" alt="" />
+        </div>
+    </section>
+
+    <!-- ------------------rules & regulation------------------------ -->
+    <section class="process" id="regulation">
+        <h3 id="rules">RULES AND REGULATION</h3>
+        <ol class="instructions">
+            <li>The contest will entirely take place online.</li>
+            <li>
+                Only one entry (solo, group, band) is allowed. *Entire group or band is considered as one entity.
+            </li>
+            <li>The participant will submit only one song per registration.</li>
+            <li>The contest is open to participants from all over India.</li>
+            <li>Participants must have an original soundtrack to participate.</li>
+            <li>Songs in any Indian (regional) language or English are allowed.</li>
+            <li>
+                Candidates cannot claim legal rights to recordings and photos submitted or broadcasts that may be made in connection with the competition.
+            </li>
+            <li>
+                No fee is payable to any competitor for performances, photos, recordings, or broadcasts
+            </li>
+            <li>
+                It is the responsibility of the applicant to ensure that the video link opens. Failure to provide a working link could lead to disqualification.
+            </li>
+            <li>
+                ClixzYou reserves the right to make amendments to its rules and regulations
+            </li>
+            <li>
+                All rights, including copyright in such media, shall vest in and be owned by the Competition in perpetuity. Photographs or video recordings cannot be made by any other parties without prior written permission of the ClixzYou
+            </li>
+            <li>
+                The compositions (lyrics and music) must not have been commercially released
+            </li>
+            <li>
+                Singers may use a Karaoke track but the voice recording should not be processed. Doing so will render the entry to be disqualified.
+            </li>
+            <li>
+                By registering in the competition, participants automatically accept all the rules and regulations of the contest.
+            </li>
+        </ol>
+    </section>
+    <br />
+    <br />
+    <!-- --------------registration----------------- -->
+    <section class="registration">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIuKRpMKM4Jk_A5YaKVzGDZjR-XActo6St-5k5aE1I4y9bhg/viewform" class="regbutton">
+            <button class="btn"> <span class="span1">Register</span> <span class="span2">Now</span> </button></a>
+
+    </section>
+</body>
+
+</html>
